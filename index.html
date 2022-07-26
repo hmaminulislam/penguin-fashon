@@ -7,8 +7,145 @@
     <title>Penguin Fashon - Tailwind</title>
     <!-- Tailwind Css link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Theme color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                primary: '#FABE4C',
+                button: '#A4BC46',
+                picture: '#F1F1F1',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    
+    <!-- Header -->
+    <header class="bg-[#fff3d1] mb-28 pb-12">
+        <!-- Navigation Start -->
+        <div class="container mx-auto">
+            <nav class="flex justify-between py-8 space-x-4">
+                <div class="logo w-56 h-auto">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="/dashboard" class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Home</a>
+                    <a href="/team" class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Team</a>
+                    <a href="/projects" class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Projects</a>
+                    <a href="/reports" class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Reports</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navigation end -->
+        <!-- Hero Start -->
+        <section>
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="hero-info w-2/5">
+                    <h1 class="text-6xl font-bold">
+                        <span class="text-primary">Be the Penguins</span>
+                        <span>of Winter</span>
+                    </h1>
+                    <p class="my-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="#" class="bg-button mt-5 py-4 px-7 font-semibold text-white"><img class="inline w-8" src="icons/shopping-cart 1.png" alt=""> BUY NOW</a>
+                </div>
+                <div class="hero-picture">
+                    <img src="images/model.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Hero End -->
+    </header>
+    <main class="container mx-auto">
+        <!-- Jacket Men -->
+        <section>
+            <h1 class="text-4xl uppercase font-bold">W0Man Jacket</h1>
+            <div class="grid grid-cols-3 gap-8">
+                <!-- single jacket -->
+                <div class="p-5">
+                    <div class="p-5 rounded-lg bg-picture">
+                        <img src="images/jacket-1.png" alt="">
+                    </div>
+                    <h2 class="text-2xl font-semibold">Yellow Coat Jacket </h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-3xl text-primary font-semibold">$203</h2>
+                        <a href="#" class="bg-button mt-5 py-4 px-7 font-semibold text-white"><img class="inline w-8" src="icons/shopping-cart 1.png" alt=""> BUY NOW</a>
+                    </div>
+                </div>
+                <!-- single jacket -->
+                <div class="p-5">
+                    <div class="p-5 rounded-lg bg-picture">
+                        <img src="images/jacket-3.png" alt="">
+                    </div>
+                    <h2 class="text-2xl font-semibold">Yellow Coat Jacket </h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-3xl text-primary font-semibold">$203</h2>
+                        <a href="#" class="bg-button mt-5 py-4 px-7 font-semibold text-white"><img class="inline w-8" src="icons/shopping-cart 1.png" alt=""> BUY NOW</a>
+                    </div>
+                </div>
+                <!-- single jacket -->
+                <div class="p-5">
+                    <div class="p-5 rounded-lg bg-picture">
+                        <img src="images/jacket-2.png" alt="">
+                    </div>
+                    <h2 class="text-2xl font-semibold">Yellow Coat Jacket </h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-3xl text-primary font-semibold">$203</h2>
+                        <a href="#" class="bg-button mt-5 py-4 px-7 font-semibold text-white"><img class="inline w-8" src="icons/shopping-cart 1.png" alt=""> BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- Jacket Man -->
+         <section class="my-24">
+            <h1 class="text-4xl uppercase font-bold">Man Jacket</h1>
+            <div class="grid grid-cols-3 gap-8">
+                <!-- single jacket -->
+                <div class="p-5">
+                    <div class="p-5 rounded-lg bg-picture">
+                        <img src="images/jacket-4.png" alt="">
+                    </div>
+                    <h2 class="text-2xl font-semibold">Yellow Coat Jacket </h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-3xl text-primary font-semibold">$203</h2>
+                        <a href="#" class="bg-button mt-5 py-4 px-7 font-semibold text-white"><img class="inline w-8" src="icons/shopping-cart 1.png" alt=""> BUY NOW</a>
+                    </div>
+                </div>
+                <!-- single jacket -->
+                <div class="p-5">
+                    <div class="p-5 rounded-lg bg-picture">
+                        <img src="images/jacket-5.png" alt="">
+                    </div>
+                    <h2 class="text-2xl font-semibold">Yellow Coat Jacket </h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-3xl text-primary font-semibold">$203</h2>
+                        <a href="#" class="bg-button mt-5 py-4 px-7 font-semibold text-white"><img class="inline w-8" src="icons/shopping-cart 1.png" alt=""> BUY NOW</a>
+                    </div>
+                </div>
+                <!-- single jacket -->
+                <div class="p-5">
+                    <div class="p-5 rounded-lg bg-picture">
+                        <img src="images/jacket-6.png" alt="">
+                    </div>
+                    <h2 class="text-2xl font-semibold">Yellow Coat Jacket </h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-3xl text-primary font-semibold">$203</h2>
+                        <a href="#" class="bg-button mt-5 py-4 px-7 font-semibold text-white"><img class="inline w-8" src="icons/shopping-cart 1.png" alt=""> BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
